@@ -8,7 +8,10 @@ const style = {
   container: `container mx-auto`,
   text: `flex flex-col lg:flex-row`,
   heroText: `text-3xl font-bold mb-8 lg:text-5xl lg:leading-snug`,
-  altText: `font-secondary mb-12 max-w-[440px] mx-auto lg:mx-0`
+  altText: `font-secondary mb-12 max-w-[440px] mx-auto lg:mx-0`,
+  buttonOne:`flex items-center justify-around space-x-4 max-w-[320px] mx-auto
+            mb-12 lg:space-x-8 lg:mx-0 lg:max-w-none lg:justify-start`,
+  buttonTwo: `border-b-2 border-transparent hover:border-white transition ease-out`
 
 }
 
@@ -23,10 +26,11 @@ const Banner = () => {
                 <p className={style.altText}>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates at ex pariatur quod vero qui ratione fugiat, cupiditate eum dolores.
                 </p>
-                <div>
-                  <button>Get it Now</button>
-                  <a href="">Explore Device</a>
+                <div className={style.buttonOne}>
+                  <button className='btn'>Get it Now</button>
+                  <a href="" className={style.buttonTwo}>Explore Device</a>
                 </div>
+                <Users />
                 </div>
                 {/* image */}
                 <div>
